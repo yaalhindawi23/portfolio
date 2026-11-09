@@ -1,0 +1,100 @@
+/* Simple styling for the portfolio assignment */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+header {
+  background-color: #333;
+  padding: 12px 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 18px;
+}
+nav a:hover { text-decoration: underline; }
+main {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 0 20px;
+}
+h1, h2 { color: #333; }
+.hero, section, .contact-form {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+.profile-frame {
+  width: 180px;
+  height: 200px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+}
+.profile-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-placeholder {
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+.skill-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+.skill-card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 12px;
+  flex: 1 1 140px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+th { background-color: #eee; }
+input, textarea {
+  width: 100%;
+  padding: 9px;
+  margin-top: 5px;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.form-group { margin-bottom: 15px; }
+label { font-weight: bold; }
+.error { color: red; display: block; font-size: 0.9em; }
+.input-error { border: 1px solid red; }
+button, .button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+button:hover, .button:hover { background-color: #555; }
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 12px;
+}
+@media (max-width: 600px) {
+  .skill-grid { display: block; }
+  .skill-card { margin-bottom: 10px; }
+  table { font-size: 0.85em; }
+}
